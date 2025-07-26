@@ -219,10 +219,28 @@ const Home = () => {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-gray-950 flex items-center justify-center text-white">
-                <div className="text-center space-y-4">
-                    <div className="w-8 h-8 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
-                    <p className="text-lg text-gray-300">Loading sessions...</p>
+            <div className="min-h-screen bg-gray-950 flex items-center justify-center text-white px-4">
+                <div className="w-full max-w-md space-y-8">
+                    <div className="space-y-2">
+                        <div className="h-6 w-32 bg-gray-800 rounded animate-pulse"></div>
+                        <div className="h-1 w-20 bg-gray-700 rounded-full animate-pulse"></div>
+                    </div>
+
+                    {/* Skeleton Dropdown */}
+                    <div className="space-y-2">
+                        <div className="h-4 w-28 bg-gray-700 rounded animate-pulse"></div>
+                        <div className="h-12 rounded-2xl bg-gray-800 animate-pulse"></div>
+                    </div>
+
+                    {/* Skeleton Button */}
+                    <div className="h-14 w-full bg-gray-800 rounded-2xl animate-pulse"></div>
+
+                    {/* Skeleton Card */}
+                    <div className="p-6 bg-gray-800 rounded-2xl space-y-2 animate-pulse">
+                        <div className="h-4 w-24 bg-gray-700 rounded"></div>
+                        <div className="h-8 w-32 bg-gray-600 rounded"></div>
+                        <div className="h-4 w-20 bg-gray-700 rounded"></div>
+                    </div>
                 </div>
             </div>
         );
