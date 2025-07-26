@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 interface WorkSession {
+    _id: any;
     id: string;
     title: string;
     startTime?: string;
